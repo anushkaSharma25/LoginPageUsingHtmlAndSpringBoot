@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Here!!</title>
+    <link rel="stylesheet" type="text/css" href="css/registerMe.css">
+    <!--<script>
+        function validateForm() {
+            var x = document.forms["myform"]["name"].value;
+            var pass = document.forms["myform"]["password"].value;
+            if (x == "" && pass == "") {
+            windows.alert("Please fill all enteries");
+            return false;
+            }
+            else{
+                window.location = "/newregistersuccess";
+            }
+        }
+    </script>-->
+</head>
+<body>
+<form action="/register" method="post" name = "myform">
+
+    <h1>Register Here!!</h1>
+    <div>
+        <label>Enter user-name</label>
+        <input type="text" name="username" required>
+    </div>
+    <div>
+        <label>Enter Password</label>
+        <input type="password" name="password" required>
+    </div>
+<button>Register</button><!--value="Register"/--><!--onclick="window.location.href='/newregistersuccess'"-->
+
+</form>
+<button onclick="window.location.href='/login'" >Want to login</button>
+</body>
+
+</html>

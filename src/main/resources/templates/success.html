@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<table>
+
+<tr><td><h3>Your username: </h3> </td><td th:text="${username}"></td></tr>
+    <tr><td><h3>Your password: </h3> </td><td th:text="${password}"></td></tr>
+    <tr><td><h3>Your  current login time:  </h3> </td><td th:text="${currentlogintime}"></td></tr>
+    <tr><td><h3>Your last login time: </h3> </td><td th:text="${lastlogintime}"></td></tr>
+
+</table>
+<br>
+<button onclick="window.location.href='/logout'">Logout</button>
+</body>
+</html>
